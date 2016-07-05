@@ -1,8 +1,10 @@
 {
   "name": "pulvus-provide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Richard Ragan",
-  "contributors" : ["Matt Edelman <medelman@paypal.com>"],
+  "contributors": [
+    "Matt Edelman <medelman@paypal.com>"
+  ],
   "description": "provide helper which contextually defines itself as AMD/CJS/browser-global",
   "main": "./provide.js",
   "repository": {
