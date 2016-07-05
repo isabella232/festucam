@@ -1,12 +1,13 @@
 {
-  "name": "dustmotes-provide",
-  "version": "0.0.3",
+  "name": "pulvus-provide",
+  "version": "1.0.0",
   "author": "Richard Ragan",
-  "description": "provide helper",
+  "contributors" : ["Matt Edelman <medelman@paypal.com>"],
+  "description": "provide helper which contextually defines itself as AMD/CJS/browser-global",
   "main": "./provide.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rragan/dust-motes.git"
+    "url": "https://github.com/krakenjs/festucam.git"
   },
   "license": "MIT",
   "engine": {

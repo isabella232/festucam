@@ -1,6 +1,6 @@
-# provide helper 
+# provide helper (pulvus-provide)
 
-Provide rich dust parameter definitions.
+Provide rich dust parameter definitions. Forked from Rich Ragan's [dust-motes](https://github.com/rragan/dust-motes) repository and carried forward as `festucam`.
 
 ## Definition
 

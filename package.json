@@ -1,18 +1,19 @@
 {
-  "name": "dust-motes",
+  "name": "festucam",
   "description": "Collection of dust helpers/filters.",
   "version": "0.0.1",
-  "homepage": "https://github.com/rragan/dust-motes",
+  "homepage": "https://github.com/krakenjs/festucam",
   "author": {
     "name": "rragan",
-    "url": "https://github.com/rragan/dust-motes"
+    "url": "https://github.com/rragan"
   },
+  "contributors" : ["Matt Edelman <medelman@paypal.com>"],
   "repository": {
     "type": "git",
-    "url": "git://github.com/rragan/dust-motes.git"
+    "url": "git://github.com/krakenjs/festucam.git"
   },
   "bugs": {
-    "url": "https://github.com/rragan/dust-motes/issues"
+    "url": "https://github.com/krakenjs/festucam/issues"
   },
   "main": "index.js",
   "engines": {

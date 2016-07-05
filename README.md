@@ -1,6 +1,6 @@
-dust-motes
+festucam
 ==========
 
 Repository for contributed helper and filter extensions to dust
 
-(Under construction)
+Forked from Rich Ragan's [dust-motes](https://github.com/rragan/dust-motes).

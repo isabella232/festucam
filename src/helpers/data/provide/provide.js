@@ -1,4 +1,12 @@
-(function (dust) {
+(function(root, factory) {
+  if (typeof define === 'function' && define.amd && define.amd.dust === true) {
+    define(['dust.core'], factory);
+  } else if (typeof exports === 'object') {
+    module.exports = factory(require('dustjs-linkedin'));
+  } else {
+    factory(root.dust);
+  }
+}(this, function (dust) {
   dust.helpers.provide = function provide(chunk, ctx, bodies, params) {
     'use strict';
     var resData,
@@ -31,4 +39,4 @@
     return bodies.block(chunk, localCtx.push(paramVals));
 
   };
-})(typeof exports !== 'undefined' ? module.exports = require('dustjs-linkedin') : dust);
+});
