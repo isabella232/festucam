@@ -1,4 +1,12 @@
-(function (dust) {
+(function(root, factory) {
+  if (typeof define === 'function' && define.amd && define.amd.dust === true) {
+    define(['dust.core'], factory);
+  } else if (typeof exports === 'object') {
+    module.exports = factory(require('dustjs-linkedin'));
+  } else {
+    factory(root.dust);
+  }
+}(this, function (dust) {
 
   /**
    * iterate helper, loops over given object.
@@ -84,4 +92,4 @@
     return chunk;
 
   };
-})(typeof exports !== 'undefined' ? module.exports = require('dustjs-linkedin') : dust);
+}));

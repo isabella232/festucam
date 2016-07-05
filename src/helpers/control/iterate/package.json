@@ -1,12 +1,13 @@
 {
-  "name": "dustmotes-iterate",
-  "version": "0.0.2",
+  "name": "pulvus-iterate",
+  "version": "1.0.0",
   "author": "Richard Ragan",
-  "description": "iterate helper",
+  "contributors" : ["Matt Edelman <medelman@paypal.com>"],
+  "description": "iterate helper with context aware CJS/AMD/global export",
   "main": "./iterate.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rragan/dust-motes.git"
+    "url": "https://github.com/krakenjs/festucam.git"
   },
   "license": "MIT",
   "engine": {
