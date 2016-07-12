@@ -93,4 +93,12 @@ describe('provide', function () {
       assert.equal(out, '6');
     });
   });
+  it('param can be complex object', function () {
+    //simulates https://github.com/krakenjs/dust-message-helper mode=paired use case
+
+    var code = '{@provide}{#param}{$id}{/param}{:param}[{"$id":"foo","$elt":"bar"},{"$id":"bing","$elt":"bang"},{"$id":"baz","$elt":"biff"}]{/provide}';
+    dust.renderSource(code, context, function (err, out) {
+      assert.equal(out, 'foobingbaz');
+    });
+  });
 });

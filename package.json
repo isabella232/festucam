@@ -7,7 +7,7 @@
     "name": "rragan",
     "url": "https://github.com/rragan"
   },
-  "contributors" : ["Matt Edelman <medelman@paypal.com>"],
+  "contributors" : ["Matt Edelman <medelman@paypal.com>", "Cédric Connes <cedric.connes@gmail.com>"],
   "repository": {
     "type": "git",
     "url": "git://github.com/krakenjs/festucam.git"
@@ -25,7 +25,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "dustjs-linkedin": "~2.0.0",
+    "dustjs-linkedin": "~2.6.0",
     "dustjs-helpers": "~1.1.1",
     "chai": "~1.5.0",
     "grunt": "~0.4.1",
