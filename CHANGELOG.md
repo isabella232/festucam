@@ -1,4 +1,4 @@
-### pulvus-provide unreleased
+### pulvus-provide v1.0.2
 
 * fix for https://github.com/krakenjs/makara/issues/76
 
