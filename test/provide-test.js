@@ -1,6 +1,8 @@
 /*global dust: true */
-dust = require('dustjs-linkedin');
+var dust = require('dustjs-linkedin');
+dust.debugLevel = 'DEBUG';
 require('dustjs-helpers');
+require('./helpers/message');
 require('../src/helpers/data/provide/provide');
 var assert = require('assert');
 
@@ -91,6 +93,16 @@ describe('provide', function () {
     var code = '{@provide}{param}{:param}{@size key=obj/}{/provide}';
     dust.renderSource(code, context, function (err, out) {
       assert.equal(out, '6');
+    });
+  });
+  it('param can be complex object', function () {
+    //simulates https://github.com/krakenjs/dust-message-helper mode=paired use case
+    var context = {
+      obj: [{"$id":"foo","$elt":"bar"},{"$id":"bing","$elt":"bang"},{"$id":"baz","$elt":"biff"}]
+    };
+    var code = '{@provide}{#param}{$id}{/param}{:param}{@message obi=obj/}{/provide}';
+    dust.renderSource(code, context, function (err, out) {
+      assert.equal(out, 'foobingbaz');
     });
   });
 });

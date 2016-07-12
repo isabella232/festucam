@@ -1,3 +1,7 @@
+### pulvus-provide unreleased
+
+* fix for https://github.com/krakenjs/makara/issues/76
+
 ### pulvus-provide v1.0.1
 
 * fix syntax error
