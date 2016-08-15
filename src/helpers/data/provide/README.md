@@ -41,7 +41,7 @@ the dust.helpers property.
 
 In node.js:
 
-require('dustmotes-provide');
+require('pulvus-provide');
 
 In browser:
 
