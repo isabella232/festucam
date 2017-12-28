@@ -1,8 +1,11 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd && define.amd.dust === true) {
     define(['dust.core'], factory);
-  } else if (typeof exports === 'object') {
-    module.exports = factory(require('dustjs-linkedin'));
+  } else if (typeof module === 'object') {
+    module.exports = {
+      provide: factory(require('dustjs-linkedin')),
+      registerWith: factory
+    };
   } else {
     factory(root.dust);
   }
