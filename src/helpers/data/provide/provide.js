@@ -2,10 +2,8 @@
   if (typeof define === 'function' && define.amd && define.amd.dust === true) {
     define(['dust.core'], factory);
   } else if (typeof module === 'object') {
-    module.exports = {
-      provide: factory(require('dustjs-linkedin')),
-      registerWith: factory
-    };
+    module.exports = factory(require('dustjs-linkedin'));
+    module.exports.registerWith = factory;
   } else {
     factory(root.dust);
   }
@@ -72,4 +70,6 @@
       }
     });
   }
+
+  return dust;
 }));
