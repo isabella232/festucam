@@ -1,3 +1,7 @@
+### pulvus-provide v1.0.3
+
+* see: https://github.com/krakenjs/festucam/pull/4
+
 ### pulvus-provide v1.0.2
 
 * fix for https://github.com/krakenjs/makara/issues/76
