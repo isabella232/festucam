@@ -8,7 +8,7 @@ Forked from Rich Ragan's [dust-motes](https://github.com/rragan/dust-motes).
 
 |Category|Helper|
 |:---|:---|
-|Data|[pulvus-provide](master/src/helpers/data/provide)|
-|HTML|[dustmotes-layout](master/src/helpers/html/layout)|
-|Strings|[substr](master/src/helpers/strings/substr)|
-|Miscellaneous|[extend](master/src/helpers/miscellaneous/extend)|
+|Data|[pulvus-provide](src/helpers/data/provide)|
+|HTML|[dustmotes-layout](src/helpers/html/layout)|
+|Strings|[substr](src/helpers/strings/substr)|
+|Miscellaneous|[extend](src/helpers/miscellaneous/extend)|
